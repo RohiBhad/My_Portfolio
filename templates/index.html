@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Outfit:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
@@ -115,29 +115,10 @@
                             <div class="tool-item"><img
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
                                     alt="Django" class="tool-image"><span>Django</span></div>
-                            <div class="tool-item"><i class="fab fa-python tool-icon"></i><span>Python</span></div>
-                            <div class="tool-item"><i class="fab fa-js tool-icon"></i><span>JavaScript</span></div>
-                            <div class="tool-item"><i class="fas fa-database tool-icon"></i><span>SQL/MySQL</span></div>
-                            <div class="tool-item"><i class="fab fa-html5 tool-icon"></i><span>HTML/CSS</span></div>
-                            <div class="tool-item"><img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
-                                    alt="Django" class="tool-image"><span>Django</span></div>
                         </div>
 
                         <!-- Bottom Row: Scrolls Right -->
                         <div class="toolbox-scroll-track track-right">
-                            <div class="tool-item"><img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
-                                    alt="Flask" class="tool-image"><span>Flask</span></div>
-                            <div class="tool-item"><i class="fab fa-react tool-icon"
-                                    style="color: #61DAFB;"></i><span>React</span></div>
-                            <div class="tool-item"><i class="fab fa-node-js tool-icon"
-                                    style="color: #339933;"></i><span>Node.js</span></div>
-                            <div class="tool-item"><i class="fab fa-git-alt tool-icon"
-                                    style="color: #F05032;"></i><span>Git</span></div>
-                            <div class="tool-item"><img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-plain.svg"
-                                    alt="Postman" class="tool-image"><span>Postman</span></div>
                             <div class="tool-item"><img
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
                                     alt="Flask" class="tool-image"><span>Flask</span></div>
@@ -356,7 +337,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 
 </html>
